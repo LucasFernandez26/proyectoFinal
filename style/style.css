@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.uniforme {
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    left: 50%;
+    text-decoration: none;
+    text-transform: none;
+}
+.uniforme a{
+    text-decoration: none;
+    color: white;
+
+}
+.uniforme h1 {
+    font-family: "MuseoModerno", sans-serif;
+    text-transform: capitalize;
+    font-size: 400;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+    max-width: 100%;
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+                                                      /*blog*/
+
+.blog{
+   position: absolute;
+    z-index: 1;
+}
+.blog h1{ 
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.texto{
+    width: 250px;
+    height: 250px;
+    align-content: center;
+}
+.texto .cuadrado{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+}
+
+.texto {
+    width: 40%; 
+    padding: 20px;
+}
+
+.mapa {
+    width: 60%; 
+    height: 250px; 
+    border: 2px solid blue; 
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+.form{
+    padding: 0 0 0 40%;
+    background-color: rgb(228, 228, 228);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(59, 48, 48);
+}
+                           /*media*/
+@media (max-width: 600px) {
+    .uniforme {
+        left: 30%;
+        text-align: center;
+    }
+
+    .uniforme h1 {
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .uniforme {
+        left: 40%;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+    .uniforme {
+        left: 40%;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 22%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1251px) {
+    .uniforme {
+        left: 45%;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 22%;
+        margin-bottom: 20px;
+    }
+}
